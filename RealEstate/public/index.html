@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LCState</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">RealEstate.</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<div class="jumbotron" style="display: flex;justify-content: center; align-items: center;">
+    <div class="inner-container center">
+        <select class="browser-default custom-select" id="status" onclick="search()">
+            <option selected>Status</option>
+            <option value="For rent">For rent</option>
+            <option value="For sale">For sale</option>
+          </select>
+          <select class="browser-default custom-select" id="location">
+            <option selected>Location</option>
+            <option value="Constantia">Constantia</option>
+            <option value="Rondebosch">Rondebosch</option>
+            <option value="Camps Bay">Camps Bay</option>
+            <option value="Paarl">Paarl</option>
+          </select>
+          <select class="browser-default custom-select" id="type">
+            <option selected>All types</option>
+            <option value="Condo">Condo</option>
+            <option value="Villa">Villa</option>
+            <option value="Apartment">Apartment</option>
+            <option value="Estate House">Estate House</option>
+          </select>
+          <select class="browser-default custom-select" id="bedrooms">
+            <option selected>Bedrooms</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+    </div>
+</div>
+<div id="properties-slider"></div>
+    <script src="/src/js/data.js"></script>
+</body>
+</html>
